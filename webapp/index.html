@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Vishnu - Portfolio</title>
+</head>
+<body>
+    <header class="imp" >
+        <h1>Vishnu</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2 class="imp">About Me</h2>
+        <p>"I'm a passionate tech enthusiast currently pursuing my B.Tech in Information Technology
+             at Jaipur Engineering College and Research Center in Jaipur. With a keen interest in both 
+             web development and DevOps, I'm on a journey to transform my fascination with technology
+              into innovative solutions. I thrive on the challenges that these fields offer, constantly 
+              seeking to learn, adapt, and create with an unyielding spirit."
+
+        </p>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="imp">Portfolio</h2>
+        <div class="project">
+            <img src="./Assets/e-shiksha'.jpeg" alt="Project 1">
+            <h3>E-shiksha</h3>
+            <p>"E-Shiksha is an e-learning platform, known for its user-friendly website, providing free courses.
+                we offer a diverse range of subjects, making affordable education accessible to all."
+
+            </p>
+        </div>
+
+        <div class="project">
+            <img src="./Assets/weather.jpeg" alt="Project 2">
+            <h3>Weather app</h3>
+            <p>"Experience real-time weather information with our React-powered weather app. Leveraging
+                 a robust API, it provides accurate weather updates at your fingertips. Stay informed, 
+                 stay ahead with our intuitive weather app."</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="imp">Contact Me</h2>
+        <p>Email: vishnukumar.it24@jecrc.ac.in</p>
+        <p>Phone:9304******</p>
+    </section>
+    <script>
+        function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle("dark");
+}
+
+    </script>
+</body>
+</html>

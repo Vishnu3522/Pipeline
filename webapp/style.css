@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Dark blue background */
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+body.dark {
+    background-color: #f0f0f0;
+    color: #000;
+    
+}
+
+header {
+    text-align: center;
+    background: url('./Assets/milky-way-2695569_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 100px; /* Adjust this for the desired banner height */
+}
+
+nav {
+    background-color: #2b2b2b;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff8000; /* Orange color for links */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #c7c7e2; /* Dark blue section background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+    border: 2px solid #ff8000;
+}
+
+body.dark section {
+    background-color:#a7a7cc;
+    color: #000;
+    border: 2px solid #ff8000;
+}
+
+.project {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #b4b5e8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#theme-toggle {
+    background-color: #ff8000; /* Orange button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #cc6600; /* Slightly darker orange on hover */
+}
+
+#theme-toggle.dark {
+    background-color: #242582; /* Dark button color for dark theme */
+    color: #fff;
+}
+.imp{
+    color:#ff8000
+}
