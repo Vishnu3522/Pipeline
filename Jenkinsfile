@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                // Check out your source code from your version control system (e.g., Git)
                 checkout scm
             }
         }
@@ -11,7 +12,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    def dockerImage = docker.build("my-webapp-image")
+                    // Build your Docker image
+                    docker.build("my-webserver")
                 }
             }
         }
@@ -19,7 +21,12 @@ pipeline {
         stage('Deploy Docker Container') {
             steps {
                 script {
-                    dockerImage.inside('-p 8081:80') {
+                    // Start a Docker container based on the image you built
+                    def dockerImage = docker.image("my-webserver")
+
+                    // Map a port from the host to the container (e.g., 8082 to 80)
+                    dockerImage.inside('-p 8082:80') {
+                        // Start your web server or application within the container
                         sh 'docker run -d -p 80:80 my-webserver'
                     }
                 }
